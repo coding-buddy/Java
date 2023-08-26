@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        long accountNumber = scanner.nextLong();
+
+        scanner.nextLine();
+        String accountHolderName = scanner.nextLine();
+
+        char gender = scanner.nextLine().charAt(0);
+
+        int amount = scanner.nextInt();
+
+        int currentBalance = 20000;
+
+        if (amount <= currentBalance) {
+            currentBalance -= amount;
+            System.out.println("Hi Mr. " +( accountHolderName) + "!");
+            System.out.println("Your Account Balance after withdrawl is " + currentBalance + ".");
+        } else {
+            System.out.println("Hi Ms. " +( accountHolderName) + "!");
+            System.out.println("Insufficient Funds! You can not withdraw " + amount + ".");
+        }
+
+        scanner.close();
+    }
+}
