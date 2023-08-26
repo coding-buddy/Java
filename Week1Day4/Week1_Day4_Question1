@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int fours, sixes;
+        
+        fours = scan.nextInt();
+        sixes = scan.nextInt();
+        
+        int total = (fours * 4) + (sixes * 6);
+        System.out.print(total);
+    }
+}
