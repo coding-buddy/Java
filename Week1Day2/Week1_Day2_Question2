@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int x, y, n;
+        
+        x = scan.nextInt();
+        y = scan.nextInt();
+        n = scan.nextInt();
+        
+        for (int i = x; i <= y; i++){
+            if (i % n == 0){
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
